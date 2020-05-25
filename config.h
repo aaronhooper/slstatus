@@ -66,8 +66,8 @@ static const char net_if[] = "wlp3s0";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ wifi_essid,  "%s",           net_if  },
-	{ wifi_perc,   "%s",           net_if  },
-	{ netspeed_rx, "%s",           net_if  },
-	{ datetime,    "%s",           "%F %T" },
+	{ wifi_essid,  "SSID: %s; ",         net_if  },
+	{ wifi_perc,   "Strength: %s%%; ",   net_if  },
+	{ netspeed_rx, "RX: %s; ",           net_if  },
+	{ datetime,    "%s",                 "%F %T" },
 };
