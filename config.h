@@ -66,6 +66,7 @@ static const char net_if[] = "wlp3s0";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+	{ ram_perc,   "[   %s%% ]  ",  NULL },
 	{ wifi_essid, "[   %s ]  ",    net_if  },
 	{ datetime,   "[   %s ]",      "%F %T" },
 };
